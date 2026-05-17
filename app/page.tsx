@@ -137,7 +137,7 @@ export default function Home() {
               onClick={() => setDarkMode(!darkMode)}
             />
             <a
-              href="/resume.pdf"
+              href="/I.A.S.H.Fernando.pdf"
               className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full transition"
             >
               Resume
@@ -187,7 +187,7 @@ export default function Home() {
                   View Projects
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="/I.A.S.H.Fernando.pdf"
                   className="border-2 border-purple-600 px-7 py-3 rounded-full hover:bg-purple-600 hover:text-white transition"
                 >
                   Download CV
