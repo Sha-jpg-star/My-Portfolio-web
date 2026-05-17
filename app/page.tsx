@@ -146,7 +146,7 @@ export default function Home() {
         </nav>
 
         {/* HOME SECTION */}
-        <section id="home" className="min-h-screen flex items-center justify-center px-6 md:px-20">
+        <section id="home" className="min-h-screen h-screen flex items-center justify-center px-6 md:px-20">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -80 }}
