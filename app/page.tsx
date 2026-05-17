@@ -35,7 +35,7 @@ export default function Home() {
         });
       },
       {
-        threshold: 0.2, // Section එකක් screen එකට එද්දීම navbar එක update වෙන්න threshold එක අඩු කළා
+        threshold: 0.2, 
       }
     );
 
@@ -44,16 +44,18 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setDarkMode(true);
-    }
-  }, []);
 
   useEffect(() => {
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
+  useEffect(() => {
+  const root = window.document.documentElement;
+  if (darkMode) {
+    root.classList.add("dark");
+  } else {
+    root.classList.remove("dark");
+  }
+}, [darkMode]);
 
   const skills = [
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" />, level: "90%" },
