@@ -74,30 +74,42 @@ export default function Home() {
   ];
 
   const projects = [
+{
+  title: "Employee Payroll Management System",
+  desc: "A full-stack HR Payroll Management System that automates employee salary processing, attendance tracking, and payslip generation. It includes role-based employee management, automated payroll calculation (Net Pay & Gross Pay with EPF/ETF deductions), and a secure REST API built with Node.js and Express. The frontend is developed using React/Next.js with a modern responsive UI.",
+  image: "/EMS.png",
+ github: "https://github.com/Sha-jpg-star/EMS-FrontEnd"
+},
+ {
+ title: "AI Resume Screening & ATS Scoring System",
+desc: "An AI-powered system that analyzes resumes and provides ATS scoring based on job relevance. It extracts key skills and information from resumes to help automate and improve the recruitment process. Built to simulate real-world HR screening workflows and enhance hiring efficiency.",
+  image: "/ResumeATSScore.png",
+  github: "https://github.com/Sha-jpg-star/AI-resume-screening-ATS-scoring",
+},
     {
-      title: "Travel & Tour Website",
-      desc: "Travel booking platform with responsive UI and Use to develop HTML,CSS,Javascript,PHP and MySQL.",
-      image: "/Traveler.png",
-      github: "https://github.com/Sha-jpg-star/Travel-and-Tour-Web",
-    },
-    {
-      title: "Hospital Management System",
-      desc: "This is our 2nd sem group project. Fullstack hospital management application using React, Node.js express and MongoDB.",
-      image: "/hms.png",
-      github: "https://github.com/Sha-jpg-star/MERN-Group-Project",
-    },
-    {
-      title: "Airline-Reservation-System",
-      desc: "Use to build Java( Java OOP concept ),SQL DB,Java Swing",
-      image: "/Airline.png",
-      github: "https://github.com/Sha-jpg-star/Airline-Reservation-System",
-    },
-    {
-      title: "Library-Management-System",
-      desc: "A desktop application built with Java Swing to manage library books, members, and book issuing/returning. It uses a MySQL database to store records.",
-      image: "/lib.png",
-      github: "https://github.com/Sha-jpg-star/Library-Management-System",
-    },
+  title: "Travel & Tour Website",
+  desc: "A responsive Travel Booking Website that allows users to explore and book travel services through an interactive web interface. Built using HTML, CSS, JavaScript, PHP, and MySQL with a focus on dynamic functionality and user-friendly design.",
+  image: "/Traveler.png",
+  github: "https://github.com/Sha-jpg-star/Travel-and-Tour-Web",
+},
+{
+  title: "Hospital Management System",
+  desc: "A full-stack Hospital Management System developed as a group project using React, Node.js, Express, and MongoDB. The system manages patient records, appointments, and hospital operations with a clean and responsive UI.",
+  image: "/hms.png",
+  github: "https://github.com/Sha-jpg-star/MERN-Group-Project",
+},
+{
+  title: "Airline Reservation System",
+  desc: "A desktop-based Airline Reservation System built using Java Swing, Java OOP concepts, and MySQL. The system handles flight bookings, passenger management, and reservation data through a structured interface.",
+  image: "/Airline.png",
+  github: "https://github.com/Sha-jpg-star/Airline-Reservation-System",
+},
+{
+  title: "Library Management System",
+  desc: "A Java Swing-based Library Management System designed to manage books, members, and issue/return processes. Integrated with MySQL for efficient data storage and retrieval.",
+  image: "/lib.png",
+  github: "https://github.com/Sha-jpg-star/Library-Management-System",
+}
   ];
 
   return (
@@ -342,36 +354,60 @@ export default function Home() {
             Projects
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -5 }}
-                className="bg-white/40 dark:bg-gray-800/50 backdrop-blur-lg rounded-3xl overflow-hidden shadow-xl border border-white/10 flex flex-col"
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 sm:h-52 object-cover"
-                />
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  {projects.map((project, index) => (
+    <motion.div
+      key={index}
+      whileHover={{ y: -8, scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 200 }}
+      className="group relative rounded-3xl overflow-hidden border border-white/10 
+                 bg-gradient-to-br from-white/40 to-white/10 
+                 dark:from-gray-900/60 dark:to-gray-800/40
+                 backdrop-blur-xl shadow-2xl flex flex-col"
+    >
+      {/* Image */}
+      <div className="overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-48 sm:h-52 object-cover 
+                     group-hover:scale-110 transition duration-500"
+        />
+      </div>
 
-                <div className="p-5 sm:p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 flex-grow">{project.desc}</p>
-                  <div className="flex gap-4 mt-5">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border border-purple-600 px-5 py-2 rounded-full hover:bg-purple-600 hover:text-white transition text-xs sm:text-sm font-medium text-center w-full"
-                    >
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+          {project.title}
+        </h3>
+
+        <p className="text-sm text-gray-600 dark:text-gray-300 flex-grow leading-relaxed">
+          {project.desc}
+        </p>
+
+        {/* Button */}
+        <div className="mt-6">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center w-full 
+                       px-5 py-2.5 rounded-full text-sm font-medium
+                       bg-gradient-to-r from-purple-600 to-blue-600
+                       text-white shadow-lg hover:shadow-purple-500/30
+                       hover:scale-105 transition"
+          >
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+
+      {/* Glow effect */}
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500
+                      bg-gradient-to-r from-purple-500/10 to-blue-500/10 pointer-events-none"></div>
+    </motion.div>
+  ))}
+</div>
         </section>
 
         {/* CONTACT SECTION */}
