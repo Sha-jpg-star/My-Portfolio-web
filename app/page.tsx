@@ -153,7 +153,7 @@ desc: "An AI-powered system that analyzes resumes and provides ATS scoring based
               onClick={() => setDarkMode(!darkMode)}
             />
             <a
-              href="/I.A.S.H.Fernando.pdf"
+              href="/I.A.S.H.Fernando CV.pdf"
               className="hidden sm:inline-block bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-full transition text-sm sm:text-base font-semibold"
             >
               Resume
