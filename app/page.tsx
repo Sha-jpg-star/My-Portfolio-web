@@ -240,7 +240,7 @@ desc: "An AI-powered system that analyzes resumes and provides ATS scoring based
                   View Projects
                 </a>
                 <a
-                  href="/I.A.S.H.Fernando.pdf"
+                  href="/I.A.S.H.Fernando CV.pdf"
                   className="border-2 border-purple-600 px-6 py-3 rounded-full hover:bg-purple-600 hover:text-white transition text-sm sm:text-base font-medium"
                 >
                   Download CV
