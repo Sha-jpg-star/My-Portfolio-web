@@ -24,7 +24,7 @@ const RESUME_PATH = "/Fernando_CV.pdf"; // renamed: avoid spaces/parentheses in 
 const CONTACT_EMAIL = "shalinihimanjana99@gmail.com";
 const GITHUB_URL = "https://github.com/Sha-jpg-star";
 const LINKEDIN_URL = "https://linkedin.com/in/shalini-fernando-8731703a6";
-const FULL_NAME = "Shalini Fernando";
+const FULL_NAME = "Shalini Himanjana";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
