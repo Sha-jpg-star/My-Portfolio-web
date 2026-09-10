@@ -245,15 +245,15 @@ export default function Home() {
               className="text-center md:text-left order-2 md:order-1"
             >
               <p className="text-purple-700 dark:text-purple-400 text-base sm:text-lg mb-2 font-medium">
-                Hey, I&apos;m Shalini
+                Hey, I&apos;m 
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
-                Full-Stack <span className="text-purple-600">Developer</span>
+                Shalini <span className="text-purple-600">Himanjana</span>
               </h1>
 
               <div className="mt-3 text-xl sm:text-2xl font-semibold text-purple-700 dark:text-purple-400 h-[40px]">
                 <TypeAnimation
-                  sequence={["Frontend Developer", 2000, "Backend Developer", 2000, "UI/UX Designer", 2000]}
+                  sequence={["IT ", 2000, "IT undergraduate ", 2000]}
                   speed={50}
                   repeat={Infinity}
                 />
@@ -261,8 +261,7 @@ export default function Home() {
 
               <p className="mt-4 text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-xl mx-auto md:mx-0">
                 I&apos;m an IT undergraduate pursuing a Higher National Diploma at the Sri Lanka Institute of
-                Advanced Technological Education (SLIATE). Passionate about building modern full-stack
-                applications with clean, user-friendly interfaces.
+                Advanced Technological Education (SLIATE).Passionate about software development, AI, web technologies, and IT solutions. I enjoy building practical projects and solving real-world problems through technology.
               </p>
 
               <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
@@ -325,26 +324,27 @@ export default function Home() {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
               <div className="bg-white/40 dark:bg-gray-800/50 backdrop-blur-lg p-6 sm:p-8 rounded-3xl shadow-xl border border-white/10">
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Education</h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                  Higher National Diploma in IT at ATI Dehiwala, focusing on full-stack development,
-                  databases, AI, and cloud technologies.
+                  Higher National Diploma in Information Technology (HNDIT)
+Sri Lanka Institute of Advanced Technological Education (SLIATE)
+2024 – Present
                 </p>
               </div>
 
               <div className="bg-white/40 dark:bg-gray-800/50 backdrop-blur-lg p-6 sm:p-8 rounded-3xl shadow-xl border border-white/10">
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Career Goal</h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                  Aspiring software engineer passionate about building scalable applications and modern
-                  UI experiences.
+                 To start my career in the IT industry, apply my technical knowledge, gain real-world experience, and grow as a skilled IT professional.
                 </p>
               </div>
 
               <div className="bg-white/40 dark:bg-gray-800/50 backdrop-blur-lg p-6 sm:p-8 rounded-3xl shadow-xl border border-white/10 sm:col-span-2 lg:col-span-1">
                 <h3 className="text-xl sm:text-2xl font-bold mb-3">Interests</h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                  Full-stack development, DevOps, UI/UX, AI, databases, API development, and cloud systems.
+                  Software Development • Artificial Intelligence • Web Technologies • Databases • IT Support • Emerging Technologies
                 </p>
               </div>
             </div>
@@ -356,6 +356,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-5xl font-bold text-center mb-12 sm:mb-16 text-purple-700 dark:text-purple-400">
             Skills
           </h2>
+          
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {skills.map((skill) => (
@@ -506,7 +507,7 @@ export default function Home() {
               <div className="bg-purple-100/70 dark:bg-purple-900/20 p-5 sm:p-6 rounded-2xl shadow border border-purple-500/10">
                 <h4 className="font-bold text-lg mb-1">Goals</h4>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  Becoming a full-stack developer and growing DevOps and AI skills.
+                  To start my career in the IT industry, apply my technical knowledge, gain real-world experience, and grow as a skilled IT professional.
                 </p>
               </div>
 
@@ -538,5 +539,8 @@ export default function Home() {
         </footer>
       </main>
     </div>
+
+
+
   );
 }
