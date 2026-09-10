@@ -90,7 +90,7 @@ export default function Home() {
       title: "Archivum — AI Knowledge Sharing Platform",
       desc: "A full-stack document Q&A platform with a Retrieval-Augmented Generation pipeline. Upload PDFs/DOCX/TXT, then ask questions and get answers grounded in your own documents — complete with cited sources and a confidence score. Runs on 100% local AI (Llama 3.2 via Ollama), with no API costs.React Node.js PostgreSQL Prisma Qdrant Ollama JWT",
       image: "/AIK.png",
-      github: "https://github.com/Sha-jpg-star/EMS-FrontEnd",
+      github: "https://github.com/Sha-jpg-star/Archivum---ai-knowledge-platform-ollama",
     },
     {
       title: "AI Resume Screening & ATS Scoring System",
