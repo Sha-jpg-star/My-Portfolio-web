@@ -20,10 +20,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 // Keep shared constants in one place so they never drift out of sync
-const RESUME_PATH = "/Fernando_CV.pdf"; // renamed: avoid spaces/parentheses in filenames used in URLs
+const RESUME_PATH = "./Shalini_Himanjana_CV-2 (2).pdf"; // renamed: avoid spaces/parentheses in filenames used in URLs
 const CONTACT_EMAIL = "shalinihimanjana99@gmail.com";
 const GITHUB_URL = "https://github.com/Sha-jpg-star";
-const LINKEDIN_URL = "https://linkedin.com/in/shalini-fernando-8731703a6";
+const LINKEDIN_URL = "https://linkedin.com/in/shalini-himanjana-8731703a6";
 const FULL_NAME = "Shalini Himanjana";
 
 export default function Home() {
@@ -253,7 +253,7 @@ export default function Home() {
 
               <div className="mt-3 text-xl sm:text-2xl font-semibold text-purple-700 dark:text-purple-400 h-[40px]">
                 <TypeAnimation
-                  sequence={["IT ", 2000, "IT undergraduate ", 2000]}
+                  sequence={["IT ", 2000, "IT undergraduate ", 2000, " Software Development ", 2000, "FrontEnd Development ", 2000, "BackEnd Development ", 2000, "Testing ", 2000, ]}
                   speed={50}
                   repeat={Infinity}
                 />
